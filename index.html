@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Creator</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- External QR code library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Generate Your QR Code</h1>
+        </header>
+        <main>
+            <section class="qr-section">
+                <div id="qrOutput"></div>
+                <input type="text" id="inputText" placeholder="Enter text or URL and press enter" onkeypress="if(event.keyCode==13) generateQr()" />
+            </section>
+        </main>
+        <footer>
+            <hr />
+            <p>QR Code Generator Tool</p>
+        </footer>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
